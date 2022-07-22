@@ -12,8 +12,7 @@
 		344D56A1288987B6004B8B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344D56A0288987B6004B8B6F /* Assets.xcassets */; };
 		344D56A4288987B6004B8B6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344D56A3288987B6004B8B6F /* Preview Assets.xcassets */; };
 		344D56AE288987B7004B8B6F /* JioujiappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D56AD288987B7004B8B6F /* JioujiappTests.swift */; };
-		344D56B8288987B7004B8B6F /* JioujiappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D56B7288987B7004B8B6F /* JioujiappUITests.swift */; };
-		344D56BA288987B7004B8B6F /* JioujiappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D56B9288987B7004B8B6F /* JioujiappUITestsLaunchTests.swift */; };
+		34DC4A02288ACF020020A5AF /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 34DC4A01288ACF020020A5AF /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +41,6 @@
 		344D56A9288987B7004B8B6F /* JioujiappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JioujiappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		344D56AD288987B7004B8B6F /* JioujiappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JioujiappTests.swift; sourceTree = "<group>"; };
 		344D56B3288987B7004B8B6F /* JioujiappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JioujiappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		344D56B7288987B7004B8B6F /* JioujiappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JioujiappUITests.swift; sourceTree = "<group>"; };
-		344D56B9288987B7004B8B6F /* JioujiappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JioujiappUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34DC4A02288ACF020020A5AF /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +74,6 @@
 			children = (
 				344D569B288987B4004B8B6F /* Jioujiapp */,
 				344D56AC288987B7004B8B6F /* JioujiappTests */,
-				344D56B6288987B7004B8B6F /* JioujiappUITests */,
 				344D569A288987B4004B8B6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,15 +115,6 @@
 			path = JioujiappTests;
 			sourceTree = "<group>";
 		};
-		344D56B6288987B7004B8B6F /* JioujiappUITests */ = {
-			isa = PBXGroup;
-			children = (
-				344D56B7288987B7004B8B6F /* JioujiappUITests.swift */,
-				344D56B9288987B7004B8B6F /* JioujiappUITestsLaunchTests.swift */,
-			);
-			path = JioujiappUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +131,9 @@
 			dependencies = (
 			);
 			name = Jioujiapp;
+			packageProductDependencies = (
+				34DC4A01288ACF020020A5AF /* ComposableArchitecture */,
+			);
 			productName = Jioujiapp;
 			productReference = 344D5699288987B4004B8B6F /* Jioujiapp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +206,9 @@
 				Base,
 			);
 			mainGroup = 344D5690288987B4004B8B6F;
+			packageReferences = (
+				34DC4A00288ACF020020A5AF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 344D569A288987B4004B8B6F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,8 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				344D56BA288987B7004B8B6F /* JioujiappUITestsLaunchTests.swift in Sources */,
-				344D56B8288987B7004B8B6F /* JioujiappUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +575,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		34DC4A00288ACF020020A5AF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		34DC4A01288ACF020020A5AF /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34DC4A00288ACF020020A5AF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 344D5691288987B4004B8B6F /* Project object */;
 }
