@@ -14,7 +14,6 @@ struct TransparentAccountState: Equatable {
 enum TransparentAccountAction: Equatable {
     case onAppear
     case dataLoaded(Result<[ModelTransparentAccount], ApiError>)
-    case tap(ModelTransparentAccount)
 }
 
 struct TransparentAccountEnvironment {
@@ -40,8 +39,5 @@ let transparentAccountReducer = Reducer<
             state.accounts = []
         }
         return .none
-    case .tap(let account):
-        return .none
     }
 }
-

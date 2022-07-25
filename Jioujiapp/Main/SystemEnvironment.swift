@@ -23,5 +23,8 @@ struct SystemEnvironment<Environment> {
     static func sandbox(environment: Environment) -> Self {
         Self(environment: environment, mainQueue: { .main })
     }
-}
 
+    static func preview(environment: Environment) -> Self {
+        Self(environment: environment, mainQueue: { .main })
+    }
+}

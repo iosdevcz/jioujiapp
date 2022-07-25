@@ -28,4 +28,3 @@ let mainReducer = Reducer<
         environment: { _ in .sandbox(
             environment: TransparentAccountEnvironment(
                 transparentAccountsRequest: transparentAccountsApiRequestEffect))}))
-

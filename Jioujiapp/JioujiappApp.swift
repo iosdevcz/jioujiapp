@@ -12,7 +12,7 @@ import SwiftUI
 struct JioujiappApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView(
+            ViewMain(
                 store: Store(
                     initialState: MainState(),
                     reducer: mainReducer,

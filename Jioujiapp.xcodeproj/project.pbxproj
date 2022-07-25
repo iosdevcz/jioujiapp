@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		344D569D288987B4004B8B6F /* JioujiappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D569C288987B4004B8B6F /* JioujiappApp.swift */; };
-		344D569F288987B4004B8B6F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D569E288987B4004B8B6F /* MainView.swift */; };
+		344D569F288987B4004B8B6F /* ViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D569E288987B4004B8B6F /* ViewMain.swift */; };
 		344D56A1288987B6004B8B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344D56A0288987B6004B8B6F /* Assets.xcassets */; };
 		344D56A4288987B6004B8B6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344D56A3288987B6004B8B6F /* Preview Assets.xcassets */; };
 		3489AC83288C30E300985435 /* ComposableTransparentAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3489AC82288C30E300985435 /* ComposableTransparentAccount.swift */; };
@@ -25,6 +25,7 @@
 		34E9310D288D74AE009FC47F /* ComposableMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9310C288D74AE009FC47F /* ComposableMain.swift */; };
 		34E9310F288D9186009FC47F /* ModelTransparentAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9310E288D9186009FC47F /* ModelTransparentAccountTests.swift */; };
 		34E93111288D91F3009FC47F /* ModelTransparentAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E93110288D91F3009FC47F /* ModelTransparentAccount.swift */; };
+		34E93116288DA522009FC47F /* ViewListTransparentAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E93115288DA521009FC47F /* ViewListTransparentAccounts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,7 @@
 /* Begin PBXFileReference section */
 		344D5699288987B4004B8B6F /* Jioujiapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jioujiapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344D569C288987B4004B8B6F /* JioujiappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JioujiappApp.swift; sourceTree = "<group>"; };
-		344D569E288987B4004B8B6F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		344D569E288987B4004B8B6F /* ViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMain.swift; sourceTree = "<group>"; };
 		344D56A0288987B6004B8B6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		344D56A3288987B6004B8B6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		344D56A9288987B7004B8B6F /* JioujiappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JioujiappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +66,7 @@
 		34E9310C288D74AE009FC47F /* ComposableMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableMain.swift; sourceTree = "<group>"; };
 		34E9310E288D9186009FC47F /* ModelTransparentAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTransparentAccountTests.swift; sourceTree = "<group>"; };
 		34E93110288D91F3009FC47F /* ModelTransparentAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTransparentAccount.swift; sourceTree = "<group>"; };
+		34E93115288DA521009FC47F /* ViewListTransparentAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewListTransparentAccounts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				34E9310C288D74AE009FC47F /* ComposableMain.swift */,
-				344D569E288987B4004B8B6F /* MainView.swift */,
 				3489AC86288C3ED000985435 /* SystemEnvironment.swift */,
+				344D569E288987B4004B8B6F /* ViewMain.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -171,6 +173,7 @@
 				3489AC82288C30E300985435 /* ComposableTransparentAccount.swift */,
 				3489AC8A288C4D9E00985435 /* EffectsTransparentAccount.swift */,
 				34E93110288D91F3009FC47F /* ModelTransparentAccount.swift */,
+				34E93115288DA521009FC47F /* ViewListTransparentAccounts.swift */,
 			);
 			path = TransparentAccount;
 			sourceTree = "<group>";
@@ -311,12 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				344D569F288987B4004B8B6F /* MainView.swift in Sources */,
+				344D569F288987B4004B8B6F /* ViewMain.swift in Sources */,
 				344D569D288987B4004B8B6F /* JioujiappApp.swift in Sources */,
 				34DC4A0C288B10DC0020A5AF /* ApiStrings.swift in Sources */,
 				34DC4A06288AF1910020A5AF /* TransparentAccountsApi.swift in Sources */,
 				34DC4A0A288B04010020A5AF /* ApiError.swift in Sources */,
 				3489AC8B288C4D9E00985435 /* EffectsTransparentAccount.swift in Sources */,
+				34E93116288DA522009FC47F /* ViewListTransparentAccounts.swift in Sources */,
 				3489AC83288C30E300985435 /* ComposableTransparentAccount.swift in Sources */,
 				34E93111288D91F3009FC47F /* ModelTransparentAccount.swift in Sources */,
 				34DC4A08288B03B10020A5AF /* EnvironmentVariable.swift in Sources */,

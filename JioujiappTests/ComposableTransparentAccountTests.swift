@@ -19,7 +19,6 @@ class ComposableTransparentAccountTests: XCTestCase {
         let action = TransparentAccountAction.self
         XCTAssertNotNil(action.onAppear)
         XCTAssertNotNil(action.dataLoaded)
-        XCTAssertNotNil(action.tap)
     }
 
     func testComposableTransparentAccountTakesEnvironments() {
